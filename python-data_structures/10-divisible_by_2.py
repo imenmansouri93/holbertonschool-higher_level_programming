@@ -3,10 +3,11 @@ from copy import copy
 
 
 def divisible_by_2(my_list=[]):
-     A = my_list.copy()
-     for i in range(len(A)):
-        if A[i] % 2 == 0:
-            A[i] = True
+    new_list = []
+    for i in my_list:
+        if i % 2 == 0:
+            new_list.append(True)
         else:
-            A[i] = False
-        return (A)
+            new_list.append(False)
+
+    return (new_list)
