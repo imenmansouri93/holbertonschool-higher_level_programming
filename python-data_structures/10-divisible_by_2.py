@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-def divisible_by_2(my_list=[]):
-    new_list = my_list[:]
-    for i in range(len(my_list)):
-        if i % 2 == 0:
-            new_list[i] = True
-        else:
-            new_list[i] = False
+from tokenize import maybe
 
-    return (new_list)
+
+def divisible_by_2(my_list=[]):
+    return [i % 2  == 0 for i in my_list]
