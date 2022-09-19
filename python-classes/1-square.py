@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Define a sqare with private instance"""
+"""Define a square with private instance"""
 
 
 class Square:
     """Represent a square"""
-    
+
     def __init__(self, size):
         """initialise  variable
         Args:
