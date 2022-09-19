@@ -3,6 +3,9 @@
 
 
 class Square:
-    def __init__(self, size=0):
-        """initialise  variable"""
+    def __init__(self, size):
+        """initialise  variable
+        Args:
+        size (int): The size of the new square.
+        """
         self.__size = size
