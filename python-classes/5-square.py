@@ -4,11 +4,11 @@ class Square:
     """Represent square"""
     def __init__(self, size=0):
         self.__size = size
-    """retrieve size"""
+    """retrieve size """
     @property
     def size(self):
         return self.__size
-    """set private size attribute"""
+    """set private size attribute """
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
