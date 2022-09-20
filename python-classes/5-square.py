@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Define a square with private instance"""
+
+
 class Square:
     """Represent a square"""
 
@@ -27,9 +29,9 @@ class Square:
         return(self.__size * self.__size)
     """Printing a square"""
     def my_print(self):
-        for i  in range(self.__size):
+        for i in range(self.__size):
             for j in range(self.__size):
-                print("#",end="")
+                print("#", end="")
             print()
         if self.__size == 0:
             print("")
