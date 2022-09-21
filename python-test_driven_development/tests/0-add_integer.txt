@@ -1,39 +1,37 @@
 #0-add_integer.txt
-======================
-Using ``0-add_integer.py``
-----------------------
-``add_integer`` from the ``example`` module
-    
-    >>> from example import  add_integer
-Now use it:
-=========
-``add_integer()``` returns the addition of two argument.
-::
-    >>> add_integer = __impor__(`0-add_integer`).add_integer
-    >>>add_integer(5, 6)
-    11
-::
-    >>> add_integer(5, -6)
-    -1
-The function also works with floating.
-::
-    >>> add_integer(5.0, 6.0)
-    11
-Floating ana non-floating point value can be combined.
-::
-    >>> add_integer(2.5, -3)
-    -1
+import the module
+>>> add_integer = __import__('0-add_integer').add_integer
+
+add two integer
+>>> add_integer(5, 6)
+11
+>>> add_integer(5, -6)
+-1
+>>> add_integer(5.0, 6.0)
+11
+>>> add_integer(2.5, -3)
+-1
 The second argument is optional -by default, it is 98.
-::
-    >>> add_integer(1)
-    99
+>>> add_integer(1)
+99
 TypeError
 ==========
-``add_integer`` expects that both arguments are either integers or floats.
-if either argument is a non_integer and non-float, a TypeError is raised:
-::
-    >>> add_integer("Bonjour", 3)
-    TypeError: a must be an integer
-::
-    >>> add_integer(3, "Bonjour")
-    TypeError: b must be an integer
+>>> add_integer("Bonjour", 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(3, "Bonjour")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(None, 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(float('nan'), 98)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(3, float('nan'))
+Traceback (most recent call last):
+TypeError: b must be an integer
