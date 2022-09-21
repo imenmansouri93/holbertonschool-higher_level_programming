@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
+"""Create a empty class Rectangle"""
 class Rectangle:
-    """A rectangle"""
     def __init__(self):
         """
+        Ampty clas
         """
