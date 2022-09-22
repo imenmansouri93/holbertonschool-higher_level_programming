@@ -4,7 +4,8 @@
 
 class Rectangle():
     """Represent a Rectangle"""
-    number_of_instances =  0
+    number_of_instances = 0
+
     
     def __init__(self, width=0, height=0):
         """
@@ -15,7 +16,7 @@ class Rectangle():
         """
         self.__width = width
         self.__height = height
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -72,4 +73,5 @@ class Rectangle():
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
