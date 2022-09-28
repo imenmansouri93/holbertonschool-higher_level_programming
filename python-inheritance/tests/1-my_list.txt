@@ -8,15 +8,15 @@ import module
 
 
 Function:
-========
+=========
 Write a class Mylist that inherits from list:
 
     * You can assume that all the elements of the list will be of type int
 
 Test
-====
+=====
 
-Test case 0: Test case to order a disorted list of positive integer
+Test case #0: Test case to order a disorted list of positive integer
 
     >>> my_list = MyList()
     >>> my_list.append(1)
@@ -35,7 +35,7 @@ Test case 0: Test case to order a disorted list of positive integer
     >>> print(my_list)
     [1, 4, 2, 3, 5]
  
-Test case 1: Test case to order a disorted list of negative integer
+Test case #1: Test case to order a disorted list of negative integer
 
     >>> my_list = MyList()
     >>> my_list.append(-1)
@@ -54,7 +54,8 @@ Test case 1: Test case to order a disorted list of negative integer
     >>> print(my_list)
     [-1, -4, -2, -3, -5]
 
-Test 3: A test case for a empty list
+Test case #3: A test case for a empty list
+
     >>> my_list =  MyList()
     >>> print(my_list)
     []
