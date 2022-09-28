@@ -13,8 +13,8 @@ Write a class Mylist that inherits from list:
 
     * You can assume that all the elements of the list will be of type int
 
-Test
-=====
+Section:
+===============
 
 Test case #0: Test case to order a disorted list of positive integer
 
@@ -54,7 +54,7 @@ Test case #1: Test case to order a disorted list of negative integer
     >>> print(my_list)
     [-1, -4, -2, -3, -5]
 
-Test case #3: A test case for a empty list
+Test case #2: A test case for a empty list
 
     >>> my_list =  MyList()
     >>> print(my_list)
@@ -66,7 +66,11 @@ Test case #3: A test case for a empty list
     >>> print(my_list)
     []
 
-Test error: invalid test of tuple
+
+Section: AttributeError:
+==========================
+
+Test error #3: invalid test of tuple
 
     >>> my_list =  (3, 4)
     >>> print(my_list)
