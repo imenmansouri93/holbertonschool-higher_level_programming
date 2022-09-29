@@ -5,4 +5,7 @@ def inherits_from(obj, a_class):
     """
     aaaaaa
     """
-    return isinstance(type(obj), a_class) and obj != a_class
+    if type(obj) == a_class:
+     return (False)
+    else:
+        return isinstance(type(obj), a_class)
