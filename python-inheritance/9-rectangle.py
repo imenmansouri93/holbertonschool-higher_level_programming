@@ -14,7 +14,7 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-        """not implemented"""
+        """implemented"""
         return self.__width * self.__height
 
     def __str__(self):
