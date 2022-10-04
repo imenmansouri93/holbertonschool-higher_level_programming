@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """Load, add, save"""
-import json
 import sys
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-
-args = sys.argv
-filename = "add_item.json"
-with open(filename, 'a+', encoding="utf-8") as myFile:
-    list = []
-    list.extend(args[1:])
+    filename = "add_item.json"
+    try:
+        list = load_from_json_file(filename)
+    except FileNotFoundError:
+        list = []
+    list.extend(sys.argv[1:])
     save_to_json_file(list, filename)
-    load_from_json_file(filename)
