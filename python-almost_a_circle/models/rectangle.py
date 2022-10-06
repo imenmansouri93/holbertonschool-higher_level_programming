@@ -6,6 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """class Rectangle that inherits from Base
     """
+    print_symbole = '#'
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
         self.height = height
@@ -65,3 +66,10 @@ class Rectangle(Base):
     def area(self):
         """returns the area value of the Rectangle instance."""
         return(self.__width * self.__height)
+
+    def display(self):
+        """that prints in stdout the Rectangle instance with the character #"""
+        for i in range(self.__height):
+            for j in range(self.__width):
+               print('#',end ='')
+            print()
