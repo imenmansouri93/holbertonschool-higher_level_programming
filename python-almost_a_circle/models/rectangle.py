@@ -80,7 +80,7 @@ class Rectangle(Base):
             .format(self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args):
-        """"""
+        """assigns an argument to each attribute"""
         argc = len(args)
         if argc > 0:
             try:
