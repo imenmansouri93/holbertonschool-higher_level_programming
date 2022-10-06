@@ -76,8 +76,7 @@ class Rectangle(Base):
     def __str__(self):
         """method so that it returns [Rectangle]
         (<id>) <x>/<y> - <width>/<height>"""
-        return("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
-            .format(self.id, self.x, self.y, self.width, self.height))
+        return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args):
         """assigns an argument to each attribute"""
