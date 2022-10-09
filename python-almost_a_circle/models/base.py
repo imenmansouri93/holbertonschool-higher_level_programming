@@ -33,7 +33,7 @@ class Base:
                 myFile.write("[]")
             else:
                 myFile.write(cls.to_json_string([item.to_dictionary()
-                        for item in list_objs]))
+                    for item in list_objs]))
 
     def from_json_string(json_string):
         """from json to string"""
