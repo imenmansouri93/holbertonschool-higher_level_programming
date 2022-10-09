@@ -98,7 +98,7 @@ class Rectangle(Base):
         if argc1 > 0:
             for key, value in kwargs.items():
                 if key == "id":
-                   self.id = value
+                    self.id = value
                 elif key == "width":
                     self.width = value
                 elif key == "height":
@@ -107,5 +107,4 @@ class Rectangle(Base):
                     self.x = value
                 elif key == "y":
                     self.y = value
-                
 
