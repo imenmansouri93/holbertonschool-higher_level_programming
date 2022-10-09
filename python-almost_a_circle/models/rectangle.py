@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """First Rectangle"""
+from select import select
 from models.base import Base
 
 
@@ -64,15 +65,16 @@ class Rectangle(Base):
 
     def area(self):
         """returns the area value of the Rectangle instance."""
-        return(self.__width * self.__height)
+        return(self.__width * self.__width)
 
     def display(self):
         """that prints in stdout the Rectangle instance with the character #"""
+        if self.__y > 0:
+            print('\n' * self.__y, end= '')
         for i in range(self.__height):
-            for j in range(self.__width):
-                print('#', end='')
-            print()
-
+            if self.__x > 0:
+                print(" " * self.__x, end = '')
+            print ("#" *  self.__width)
     def __str__(self):
         """method so that it returns [Rectangle]
         (<id>) <x>/<y> - <width>/<height>"""
