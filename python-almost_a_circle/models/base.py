@@ -2,6 +2,7 @@
 """Base class"""
 import json
 
+
 class Base:
     """Represent class"""
     __nb_objects = 0
@@ -15,9 +16,8 @@ class Base:
 
     def to_json_string(list_dictionaries):
         """Dictionary to JSON string"""
-        if list_dictionaries is None:
+        if list_dictionaries is None or len(list_dictionaries):
             return ("[]")
         else:
             json_object = json.dumps(list_dictionaries)
             return(json_object)
-
