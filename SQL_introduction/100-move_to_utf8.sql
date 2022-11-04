@@ -7,5 +7,8 @@ ALTER TABLE
     first_table
     CHANGE name
     VARCHAR(256)
-    CONVERT TO CHARACTER SET utf8mb4
+    CHARACTER SET utf8mb4;
+ALTER TABLE 
+    first_table
+    CONVERT CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
