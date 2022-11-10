@@ -1,6 +1,6 @@
 -- lists all the cities of California that can be found in the database
 SELECT 
-    `id`, `name`
+    id, name
 FROM cities
-WHERE `state_id` IN (SELECT `id` FROM `states` WHERE  `name` = 'Californi')
+WHERE state_id = (SELECT id FROM states WHERE  name = 'Californi')
 ORDER BY `id`  ASC;
