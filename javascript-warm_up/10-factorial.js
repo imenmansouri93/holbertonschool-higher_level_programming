@@ -14,4 +14,3 @@ function factoriel (a) {
     const fac = args[2];
     console.log(factoriel(fac));
   }
-  
