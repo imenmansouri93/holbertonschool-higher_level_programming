@@ -6,7 +6,7 @@ module.exports = class Rectangle {
       this.height = h;
     }
   }
-  
+
   print () {
     let square = '';
     for (let j = 0; j < this.width; j++) {
@@ -16,13 +16,13 @@ module.exports = class Rectangle {
       console.log(square);
     }
   }
-  
+
   rotate () {
     const a = this.height;
     this.height = this.width;
     this.width = a;
   }
-  
+
   double () {
     this.height = this.height * 2;
     this.width = this.width * 2;
